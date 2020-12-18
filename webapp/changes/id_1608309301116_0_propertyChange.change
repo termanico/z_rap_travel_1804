@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1608309301116_0_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "termanico.zraptravel1804",
+    "packageName": "",
+    "content": {
+        "property": "useExportToExcel",
+        "newValue": true
+    },
+    "selector": {
+        "id": "termanico.zraptravel1804::sap.suite.ui.generic.template.ListReport.view.ListReport::Travel--listReport",
+        "idIsLocal": false,
+        "type": "sap.ui.comp.smarttable.SmartTable"
+    },
+    "layer": "VENDOR",
+    "texts": {},
+    "namespace": "apps/termanico.zraptravel1804/changes/",
+    "projectId": "termanico.zraptravel1804",
+    "creation": 1608309301116,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "latest",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "1.0.0",
+        "to": "1.0.0",
+        "creation": "1.0.0"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}

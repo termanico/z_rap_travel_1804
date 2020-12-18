@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1608309491466_5_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "termanico.zraptravel1804",
+    "packageName": "",
+    "content": {
+        "property": "editable",
+        "newValue": false
+    },
+    "selector": {
+        "id": "termanico.zraptravel1804::sap.suite.ui.generic.template.ObjectPage.view.Details::Travel--Booking::Table",
+        "idIsLocal": false,
+        "type": "sap.ui.comp.smarttable.SmartTable"
+    },
+    "layer": "VENDOR",
+    "texts": {},
+    "namespace": "apps/termanico.zraptravel1804/changes/",
+    "projectId": "termanico.zraptravel1804",
+    "creation": 1608309491466,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "latest",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "1.0.0",
+        "to": "1.0.0",
+        "creation": "1.0.0"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}

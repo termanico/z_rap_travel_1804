@@ -104,12 +104,10 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "uri": "i18n/ObjectPage/Travel/i18n.properties"
             },
-            
             "i18n|sap.suite.ui.generic.template.ObjectPage|Booking": {
-              "type": "sap.ui.model.resource.ResourceModel",
-              "uri": "i18n/ObjectPage/Booking/i18n.properties"
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/ObjectPage/Booking/i18n.properties"
             },
-            
             "": {
                 "dataSource": "mainService",
                 "preload": true,
@@ -136,7 +134,11 @@
         "settings": {
             "forceGlobalRefresh": false,
             "objectPageHeaderType": "Dynamic",
-            "showDraftToggle": false
+            "flexibleColumnLayout": {
+                "defaultTwoColumnLayoutType": "TwoColumnsMidExpanded",
+                "defaultThreeColumnLayoutType": "ThreeColumnsEndExpanded"
+            },
+            "showDraftToggle": true
         },
         "pages": {
             "ListReport|Travel": {
@@ -152,6 +154,9 @@
                             "dateSettings": {
                                 "useDateRange": true
                             }
+                        },
+                        "tableSettings": {
+                            "multiSelect": true
                         }
                     }
                 },
@@ -160,17 +165,29 @@
                         "entitySet": "Travel",
                         "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
                         "component": {
-                            "name": "sap.suite.ui.generic.template.ObjectPage"
+                            "name": "sap.suite.ui.generic.template.ObjectPage",
+                            "settings": {
+                                "sections": {
+                                    "to_Booking::com.sap.vocabularies.UI.v1.LineItem": {}
+                                }
+                            }
                         },
                         "pages": {
-                          "ObjectPage|to_Booking":{
-                            "navigationProperty": "to_Booking",
-                            "entitySet": "Booking",
-                            "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
-                            "component": {
-                              "name": "sap.suite.ui.generic.template.ObjectPage"
+                            "ObjectPage|to_Booking": {
+                                "navigationProperty": "to_Booking",
+                                "entitySet": "Booking",
+                                "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
+                                "component": {
+                                    "name": "sap.suite.ui.generic.template.ObjectPage"
+                                }
+                            },
+                            "ObjectPage|Booking": {
+                                "component": {
+                                    "name": "sap.suite.ui.generic.template.ObjectPage"
+                                },
+                                "entitySet": "Booking",
+                                "navigationProperty": "to_Booking"
                             }
-                          }
                         }
                     }
                 }
